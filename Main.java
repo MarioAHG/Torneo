@@ -4,12 +4,20 @@ import java.io.BufferedReader;
 class Main {
     
     public static void main(String[] args){
-        jugador o = new jugador();
-        o.cats = new String[9];
-        System.out.println(o.cats[0]);
+        jugador[] jugadores = new jugador[0];
     }
 
-    public static String read(){
+    
+    public static jugador inputJ(){
+        jugador jSubmit = new jugador();
+        System.out.println("Ingrese el nombre del jugador" + ;);
+        jugadores[0] = jSubmit;
+        return jSubmit;
+    }
+
+    public 
+
+    public static String readTer(){
        
        
         try(InputStreamReader reader = new InputStreamReader(System.in);
