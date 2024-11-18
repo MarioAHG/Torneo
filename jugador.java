@@ -1,7 +1,7 @@
 public class jugador {
     String nombre;
-    String[] cats;
-    int[] siembras;
+    String cat;
+    int puntaje;
     boolean res;
     
 }
