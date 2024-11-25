@@ -8,4 +8,5 @@ public class jugador {
         this.cat = cat;
         this.puntaje = puntaje;
     }
+    public static String[] dataPlayer= new String[]{"Nombre:","Categoría","Puntaje:" };
 }
