@@ -9,4 +9,8 @@ public class jugador {
         this.puntaje = puntaje;
     }
     public static String[] dataPlayer= new String[]{"Nombre:","Categoría","Puntaje:" };
+
+    public String toData(){
+        return this.nombre + "," + this.cat + "," + this.puntaje;
+    }
 }

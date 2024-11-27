@@ -48,6 +48,7 @@ class Main {
                         categoriasMap.put(data[1], temp);
                     }
                 }
+                utils.writeToFile("jugador.csv", jg.toData());
                 System.out.println(option+"was selected");
                 break;
             case "2":
