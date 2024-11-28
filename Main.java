@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
 import java.io.BufferedReader;
+import java.io.FileReader;
 
 class Main {
 
@@ -52,6 +53,27 @@ class Main {
                 System.out.println(option+"was selected");
                 break;
             case "2":
+            Scanner scan = new Scanner(System.in);
+            String jugadorParaEliminar = scan.nextLine();
+            String linea;
+            FileReader f;
+            int aa=0;
+            try {
+                f = new FileReader("jugador.csv");
+                BufferedReader b = new BufferedReader(f);
+                while ((linea = b.readLine()) != null&&aa==0) {
+                    if(linea.indexOf(jugadorParaEliminar)!=-1){
+                        ///////////////////////////////////////////////
+                        aa=0;
+
+                    }                    
+                }
+                b.close();
+            } catch (Exception e) {
+                // TODO Auto-generated catch block
+                System.out.println("Error");
+    
+            }
             System.out.println(option+"was selected");
                 break;
             case "3":
